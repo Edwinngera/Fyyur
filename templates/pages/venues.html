@@ -11,8 +11,13 @@
 				<div class="item">
 					<h5>{{ venue.name }}</h5>
 				</div>
+				<form method="post" class="form" action="/delete/{{venue.id}}">
+					<button class='btn  btn-danger'> Delete Venue </button>
+				</form>	
 			</a>
+			
 		</li>
+		
 		{% endfor %}
 	</ul>
 {% endfor %}
